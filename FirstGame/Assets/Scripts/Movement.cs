@@ -34,24 +34,21 @@ public class Movement : MonoBehaviour
             transform.Translate(direction * speed * Time.deltaTime);
         }
 
-        if (Input.GetAxis("Jump") != 0 && j == 1)
+        /*if (Input.GetAxis("Jump") != 0 && j == 1)
         {
             j = 0;
             Vector3 direction = new Vector3(0, 0, 0);
             direction.y = Input.GetAxis("Jump");
             transform.Translate(direction * 20 * Time.deltaTime);
             jump = direction;
-        }
-        else
+        }*/
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name == "Floor")
         {
-            if (transform.position.y > oldy.y)
-            {
-                transform.Translate(jump * Time.deltaTime * (-1));
-            }
-            else
-            {
-                j = 1;
-            }
+            j = 1;
         }
     }
 }
