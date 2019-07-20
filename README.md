@@ -5,7 +5,7 @@ In questa sezione vi presento alcuni giochi realizzati con unity. <br>
 I giochi sono distribuiti in varie cartelle e sono tutti molto semplici in modo da dare a chiunque la possibilità di avere un template o un'idea di gioco iniziale.<br>
 Le cartelle sono:
 <ul>
-<li>FirstGame<li>
+<li>FirstGame</li>
 <li>My First Unity Game</li>
 </ul>
 </p>
